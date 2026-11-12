@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', 'Avenir Next', 'Segoe UI', sans-serif;
+  --font-display: 'Fredoka', 'Plus Jakarta Sans', 'Segoe UI', sans-serif;
+
+  /* Palet "Doodle Mascot": semua kelas emerald-* otomatis jadi biru kobalt */
+  --color-emerald-50: #eef2ff;
+  --color-emerald-100: #dde4ff;
+  --color-emerald-200: #bbc8ff;
+  --color-emerald-700: #2a47d1;
+  --color-emerald-800: #1b34a8;
+  --color-emerald-900: #2340c8;
+  --color-emerald-950: #14143a;
+}
+
+:root {
+  font-family: var(--font-sans);
+  color: #14143a;
+  background: #fff8ec;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+* { box-sizing: border-box; }
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(rgba(35, 64, 200, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(35, 64, 200, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+button, input, textarea, select { font: inherit; }
+a { color: inherit; text-decoration: none; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 3px solid #e57952;
+  outline-offset: 3px;
+}
